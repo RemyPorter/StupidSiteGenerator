@@ -31,7 +31,7 @@ Currently, `templates/default.html` is the template used to control the HTML out
 Put them anywhere under the `pages` folder. I don't care. For convenience, I've added an `assets` folder, which is ideally where you might drop any CSS, JavaScript, or possibly images. If it's in the `pages` folder, though, it'll be accessible anywhere in your pages.
 
 ### Deploying
-Put the contents of the `output` directory on a web server. 
+Run `scripts/build.sh`. Put the contents of the `output` directory on a web server. 
 
 # Why is this so dumb?
 Because web development is too hard, too complicated, and involves too many moving parts. I want a simple way to manage a site. I want it to be as stupid as I am. I don't want loads of features. I want to take some simple documents, and render them as HTML, and have a simple way to upload those. There is no magic, beyond calling out to Pandoc. Pandoc is incredibly complicated, and I don't fully know all of the things it can do. It doesn't matter, though, because Pandoc is the only piece of magic in this tool, and Pandoc has great documentation. If you understand Pandoc, you understand how to use this tool. If you don't understand Pandoc, well, you can still basically get a simple site up and running, with minimal HTML.
